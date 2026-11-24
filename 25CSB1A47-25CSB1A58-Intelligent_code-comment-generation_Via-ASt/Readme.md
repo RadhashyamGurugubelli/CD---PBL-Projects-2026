@@ -17,17 +17,17 @@ python run.py
 ```
 
 ```
-  .gitignore     # consists the files that are skiped in the github reposetry.. like .ven , .vscode,.env file. etc.
+  .gitignore     # consists the files that are skipped in the github reposetry.. like .venv , .vscode etc.
   backend
   frontend
   samples
   screenshots
   scripts
   tests
-  .evn.example
+  .env
   requirements.txt
   scripts
-  Evaluation   # consist of evaluation metrix of the project
+  EValuation   # consist of evaluation metrix of the project
   documentaion.pdf
   OUTPTU-RECORDING.mp4
   Description.md  # consits all about the project.how  to run and execute
