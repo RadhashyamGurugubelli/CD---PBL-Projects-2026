@@ -33,12 +33,16 @@ _BROWSER_TEST_MODULES = {
 
 
 def pytest_addoption(parser):
-    parser.addoption(
-        "--run-browser-tests",
-        action="store_true",
-        default=False,
-        help="Run Playwright browser integration tests (may require a working local browser runtime).",
-    )
+    try:
+        parser.addoption(
+            "--run-browser-tests",
+            action="store_true",
+            default=False,
+            help="Run Playwright browser integration tests (may require a working local browser runtime).",
+        )
+    except ValueError:
+        # Option already added by another plugin; ignore to avoid conflict
+        pass
 
 
 def pytest_collection_modifyitems(config, items):
